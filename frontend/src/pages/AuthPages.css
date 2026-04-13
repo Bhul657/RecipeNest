@@ -1,0 +1,115 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--cream) 0%, #f0e8de 100%);
+}
+
+.auth-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+}
+
+.auth-header { text-align: center; margin-bottom: 28px; }
+
+.auth-logo {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--rust);
+  margin-bottom: 16px;
+}
+
+.auth-header h1 {
+  font-size: 1.6rem;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+.auth-header p { color: var(--slate); font-size: 0.9rem; }
+
+.auth-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.88rem;
+  color: var(--slate);
+}
+.auth-switch a { color: var(--rust); font-weight: 600; }
+.auth-switch a:hover { text-decoration: underline; }
+
+/* Role selector */
+.role-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.role-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 12px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--cream);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+.role-option:hover { border-color: var(--rust-light); }
+.role-option.selected { border-color: var(--rust); background: #FDECEA; }
+
+.role-icon { font-size: 1.6rem; }
+.role-option strong { font-size: 0.9rem; color: var(--charcoal); }
+.role-option small  { font-size: 0.75rem; color: var(--slate); }
+
+/* Demo accounts */
+.demo-accounts {
+  margin: 20px 0 8px;
+  padding: 16px;
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+.demo-label {
+  font-size: 0.78rem;
+  color: var(--slate);
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.demo-btn {
+  padding: 8px 6px;
+  font-size: 0.78rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--charcoal);
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.demo-btn:hover { border-color: var(--rust); color: var(--rust); background: #FDECEA; }
